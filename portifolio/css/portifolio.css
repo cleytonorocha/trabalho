@@ -1,0 +1,18 @@
+.secao-portfolio{
+    text-align: center;
+}
+.botao {
+    display: inline-block;
+    background-color: #3498db; 
+    color: white; 
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}

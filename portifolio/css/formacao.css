@@ -1,0 +1,140 @@
+/* Reset de Estilos Básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout Principal */
+.principal {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.secao-formacao {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-formacao {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 1.5em;
+}
+
+/* Estilo dos Cards de Formação */
+.cards-formacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2em;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.instituicao-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5em;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 1em;
+}
+
+.card-content p {
+  font-size: 1.1em;
+  color: #34495e;
+  margin-bottom: 1em;
+}
+
+.card-content a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .titulo-formacao {
+    font-size: 1.8em;
+  }
+
+  .cards-formacao {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .card-content h2 {
+    font-size: 1.3em;
+  }
+
+  .card-content p {
+    font-size: 1em;
+  }
+
+  .titulo-experiencia {
+    font-size: 1.6em;
+  }
+
+  .experiencia-academica p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-formacao {
+    font-size: 1.6em;
+  }
+
+  .card-content h2 {
+    font-size: 1.2em;
+  }
+
+  .card-content p {
+    font-size: 0.9em;
+  }
+
+  .titulo-experiencia {
+    font-size: 1.4em;
+  }
+
+  .experiencia-academica p {
+    font-size: 0.9em;
+  }
+}

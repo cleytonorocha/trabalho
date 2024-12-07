@@ -1,0 +1,143 @@
+/* Layout Principal */
+.principal {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+/* Estilo da Seção "Sobre Mim" */
+.secao-sobre {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-sobre {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  justify-content: center;
+  text-align: left;
+}
+
+.imagem-sobre {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.sobre-conteudo p {
+  font-size: 1.2em;
+  color: #34495e;
+  line-height: 1.6;
+}
+
+/* Estilo dos Cards de Tecnologias */
+.secao-tecnologias {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 3em;
+}
+
+.titulo-tecnologias {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.cards-tecnologias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5em;
+}
+
+.card-tecnologia {
+  text-align: center;
+  padding: 1em;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-tecnologia {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+}
+
+.card-tecnologia h3 {
+  font-size: 1.1em;
+  color: #34495e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo-sobre {
+    font-size: 1.8em;
+  }
+
+  .sobre-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-sobre {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sobre-conteudo p {
+    font-size: 1.1em;
+  }
+
+  .titulo-tecnologias {
+    font-size: 1.8em;
+  }
+
+  .cards-tecnologias {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-tecnologia {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-sobre {
+    font-size: 1.6em;
+  }
+
+  .sobre-conteudo p {
+    font-size: 1em;
+  }
+
+  .imagem-sobre {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-tecnologia {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,211 @@
+/* Reset de Estilos Básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Barra de Navegação */
+.navegacao {
+  background-color: #2c3e50;
+  padding: 1em 0;
+}
+
+.navegacao__lista {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navegacao__item {
+  margin: 0 1.5em;
+}
+
+.navegacao__link {
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navegacao__link:hover,
+.navegacao__link--ativo {
+  color: #f39c12;
+}
+
+.navegacao__link--ativo {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Layout Principal */
+.principal {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.secao-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+}
+
+/* Informações de Contato */
+.informacoes-contato {
+  flex: 1;
+  text-align: center;
+  background-color: white;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-contato {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 1.5em;
+}
+
+.lista-contato {
+  list-style: none;
+  padding: 0;
+}
+
+.item-contato {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.icone-contato {
+  color: #f39c12;
+  font-size: 1.6em;
+}
+
+.imagem-contato {
+  flex: 1;
+  max-width: 1000px;
+}
+
+.imagem-contato-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;  /* Garante que o rodapé sempre fique no final da página */
+}
+
+.rodape p {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustes para Barra de Navegação */
+  .navegacao__lista {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center; /* Centraliza os links */
+  }
+
+  .navegacao__item {
+    margin: 0;
+  }
+
+  .navegacao__link {
+    font-size: 1.2em;
+  }
+
+  /* Layout Principal */
+  .principal {
+    padding: 1em;
+  }
+
+  .secao-contato {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .informacoes-contato {
+    max-width: 100%;
+    padding: 1.5em;
+  }
+
+  .titulo-contato {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .item-contato {
+    font-size: 1.1em;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icone-contato {
+    font-size: 2em;
+  }
+
+  .imagem-contato {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2em;
+  }
+
+  /* Rodapé */
+  .rodape {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .navegacao__link {
+    font-size: 1em;
+  }
+
+  .titulo-contato {
+    font-size: 1.6em;
+  }
+
+  .item-contato {
+    font-size: 1em;
+  }
+
+  .icone-contato {
+    font-size: 1.4em;
+  }
+}
